@@ -1,11 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Routes } from "react-router-dom";
+import Chat from './pages/Chat';
+import Home from './pages/Home';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
     </div>
   );
 }
