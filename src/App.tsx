@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App max-w-[728px] mx-auto text-center">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
