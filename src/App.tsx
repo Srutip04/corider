@@ -9,7 +9,7 @@ function App() {
     <div className="App max-w-[728px] mx-auto text-center">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/chat" element={<Chat />} />
+        <Route path="/chat/:userId" element={<Chat />} />
       </Routes>
     </div>
   );
